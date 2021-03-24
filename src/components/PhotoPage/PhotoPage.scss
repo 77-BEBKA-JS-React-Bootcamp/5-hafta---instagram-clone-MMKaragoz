@@ -1,0 +1,19 @@
+.frame{
+        
+    .author{
+        font-weight: 750;
+    }
+
+    .photo{
+        width: 100px;
+        height: 100px;
+    }
+
+    .photo-comment {
+        margin: 10px;
+
+        span {
+            font-weight: 650;
+        }
+    }
+}

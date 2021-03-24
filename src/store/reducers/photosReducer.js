@@ -22,6 +22,12 @@ export const photosReducer = (state = initialState, action) => {
                 error: action.payload,
                 isLoading: false
             };
+        case 'GET_PHOTO':
+            return {
+                ...state,
+                photoToGet: action.payload,
+                isLoading: false
+            }
         default:
             return state;
     };

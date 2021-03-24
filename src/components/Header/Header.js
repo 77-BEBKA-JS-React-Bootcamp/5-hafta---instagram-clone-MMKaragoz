@@ -1,13 +1,18 @@
+import { Link } from "react-router-dom";
+
 export default function Header() {
     return (
         <div className="header-wrapper">
-            <img
-                className="instagram"
-                src="https://thepracticaldev.s3.amazonaws.com/i/9dgus6e6o80pv1gx8y7t.png"
-                alt="logo of instagram"
-                width="25%"
-            />
-            
+            <Link
+                to="/"
+            >
+                <img
+                    className="instagram"
+                    src="https://thepracticaldev.s3.amazonaws.com/i/9dgus6e6o80pv1gx8y7t.png"
+                    alt="logo of instagram"
+                    width="25%"
+                />
+            </Link>
             <img
                 className="post"
                 src="https://icons-for-free.com/iconfiles/png/512/add+photo+plus+upload+icon-1320184050039319890.png"
