@@ -22,6 +22,11 @@ export const commentsReducer = (state = initialState, action) => {
           error: action.payload,
           isLoading: false
         };
+      case "ADD_NEW_COMMENT":
+        return {
+          ...state,
+          data: [...state.data, action.payload].reverse()
+        };
       default:
         return state;
     }
