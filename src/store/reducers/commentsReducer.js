@@ -5,11 +5,6 @@ const initialState = {
   
 export const commentsReducer = (state = initialState, action) => {
     switch (action.type) {
-      case "ADD_NEW_COMMENT":
-        return {
-          ...state,
-          data: [...state.data, action.payload].reverse()
-        };
       case "GET_COMMENTS_REQUEST":
         return {
           ...state,

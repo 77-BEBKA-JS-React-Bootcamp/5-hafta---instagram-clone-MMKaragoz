@@ -5,7 +5,7 @@ import "./PhotoPage.scss";
 function PhotoPage() {
 
     const photo = useSelector(state => state.photosReducer.photoToGet);
-    const comments = useSelector(state => state.commentsReducer.data)
+    const comments = useSelector(state => state.commentsReducer.data);
 
     return (
         <div className="frame">
@@ -21,6 +21,17 @@ function PhotoPage() {
                     </>
                 ))
             }
+            <form 
+                
+            >                    
+                <input
+                    id={`${photo.id}`}
+                    name={`${photo.id}`}
+                    
+                />
+                <button type="submit">Comment as Mert</button>
+            </form>
+
         </div>
     )
 }
